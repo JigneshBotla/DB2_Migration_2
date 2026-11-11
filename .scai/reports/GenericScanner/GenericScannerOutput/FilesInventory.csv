@@ -1,0 +1,3 @@
+FileName,Extension,Technology,Status,isBinary,Bytes,ContentType,ContentLines,CommentLines,BlankLines
+/bigdata.sql,sql,SQL,OK,FALSE,32718,Code,768,156,253
+/input.wsp,wsp,Other,OK,UNKNOWN,46,Other,2,0,0

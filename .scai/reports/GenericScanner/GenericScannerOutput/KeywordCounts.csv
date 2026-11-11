@@ -1,0 +1,145 @@
+File,Technology,Keyword,Count
+/bigdata.sql,SQL,=,101
+/bigdata.sql,SQL,action,19
+/bigdata.sql,SQL,add,35
+/bigdata.sql,SQL,alter table,36
+/bigdata.sql,SQL,alter column,1
+/bigdata.sql,SQL,always,6
+/bigdata.sql,SQL,and,4
+/bigdata.sql,SQL,as,37
+/bigdata.sql,SQL,authorization,1
+/bigdata.sql,SQL,avg,1
+/bigdata.sql,SQL,begin,6
+/bigdata.sql,SQL,between,2
+/bigdata.sql,SQL,bigint,1
+/bigdata.sql,SQL,by,19
+/bigdata.sql,SQL,cache,7
+/bigdata.sql,SQL,cascade,2
+/bigdata.sql,SQL,case,3
+/bigdata.sql,SQL,category,2
+/bigdata.sql,SQL,char,30
+/bigdata.sql,SQL,check,11
+/bigdata.sql,SQL,clob,1
+/bigdata.sql,SQL,close,2
+/bigdata.sql,SQL,coalesce,5
+/bigdata.sql,SQL,commit,1
+/bigdata.sql,SQL,compact,1
+/bigdata.sql,SQL,condition,2
+/bigdata.sql,SQL,connect,2
+/bigdata.sql,SQL,constraint,35
+/bigdata.sql,SQL,contains,3
+/bigdata.sql,SQL,continue,2
+/bigdata.sql,SQL,count,5
+/bigdata.sql,SQL,create view,8
+/bigdata.sql,SQL,create table,11
+/bigdata.sql,SQL,create sequence,2
+/bigdata.sql,SQL,create schema,1
+/bigdata.sql,SQL,create procedure,6
+/bigdata.sql,SQL,create function,3
+/bigdata.sql,SQL,current,45
+/bigdata.sql,SQL,cursor,2
+/bigdata.sql,SQL,cycle,8
+/bigdata.sql,SQL,data,6
+/bigdata.sql,SQL,date,12
+/bigdata.sql,SQL,days,3
+/bigdata.sql,SQL,decimal,25
+/bigdata.sql,SQL,declare exit handler for,4
+/bigdata.sql,SQL,declare,22
+/bigdata.sql,SQL,default,28
+/bigdata.sql,SQL,delete,10
+/bigdata.sql,SQL,deterministic,3
+/bigdata.sql,SQL,diagnostics,1
+/bigdata.sql,SQL,digits,1
+/bigdata.sql,SQL,do,2
+/bigdata.sql,SQL,else,4
+/bigdata.sql,SQL,elseif,1
+/bigdata.sql,SQL,enable,20
+/bigdata.sql,SQL,end,13
+/bigdata.sql,SQL,enforced,35
+/bigdata.sql,SQL,external,3
+/bigdata.sql,SQL,fetch,4
+/bigdata.sql,SQL,for,6
+/bigdata.sql,SQL,foreign,9
+/bigdata.sql,SQL,found,4
+/bigdata.sql,SQL,from,14
+/bigdata.sql,SQL,generated,6
+/bigdata.sql,SQL,get,1
+/bigdata.sql,SQL,group by,6
+/bigdata.sql,SQL,handler,2
+/bigdata.sql,SQL,identity,6
+/bigdata.sql,SQL,if,4
+/bigdata.sql,SQL,in,38
+/bigdata.sql,SQL,increment,8
+/bigdata.sql,SQL,inner join,5
+/bigdata.sql,SQL,insert,6
+/bigdata.sql,SQL,integer,39
+/bigdata.sql,SQL,into,13
+/bigdata.sql,SQL,is not null,1
+/bigdata.sql,SQL,key,9
+/bigdata.sql,SQL,language,9
+/bigdata.sql,SQL,left outer join,4
+/bigdata.sql,SQL,logged,1
+/bigdata.sql,SQL,max,2
+/bigdata.sql,SQL,maxvalue,8
+/bigdata.sql,SQL,minvalue,8
+/bigdata.sql,SQL,modifies,6
+/bigdata.sql,SQL,month,2
+/bigdata.sql,SQL,no,33
+/bigdata.sql,SQL,not null,80
+/bigdata.sql,SQL,not,5
+/bigdata.sql,SQL,null,1
+/bigdata.sql,SQL,on,27
+/bigdata.sql,SQL,open,2
+/bigdata.sql,SQL,optimization,20
+/bigdata.sql,SQL,order by,1
+/bigdata.sql,SQL,order,8
+/bigdata.sql,SQL,organize,11
+/bigdata.sql,SQL,out,8
+/bigdata.sql,SQL,path,17
+/bigdata.sql,SQL,primary key,11
+/bigdata.sql,SQL,query,20
+/bigdata.sql,SQL,r,8
+/bigdata.sql,SQL,references,9
+/bigdata.sql,SQL,reset,1
+/bigdata.sql,SQL,restart,1
+/bigdata.sql,SQL,return,3
+/bigdata.sql,SQL,returns,3
+/bigdata.sql,SQL,right,1
+/bigdata.sql,SQL,round,2
+/bigdata.sql,SQL,row,11
+/bigdata.sql,SQL,rtrim,8
+/bigdata.sql,SQL,schema,17
+/bigdata.sql,SQL,select,13
+/bigdata.sql,SQL,set,76
+/bigdata.sql,SQL,signal,2
+/bigdata.sql,SQL,smallint,4
+/bigdata.sql,SQL,sql,18
+/bigdata.sql,SQL,sqlexception,1
+/bigdata.sql,SQL,sqlstate,3
+/bigdata.sql,SQL,start,8
+/bigdata.sql,SQL,state,8
+/bigdata.sql,SQL,sum,8
+/bigdata.sql,SQL,sysibm,20
+/bigdata.sql,SQL,terminate,1
+/bigdata.sql,SQL,then,7
+/bigdata.sql,SQL,timestamp,15
+/bigdata.sql,SQL,to,1
+/bigdata.sql,SQL,unique,4
+/bigdata.sql,SQL,update,11
+/bigdata.sql,SQL,user,1
+/bigdata.sql,SQL,values,6
+/bigdata.sql,SQL,varchar,28
+/bigdata.sql,SQL,when,4
+/bigdata.sql,SQL,where,7
+/bigdata.sql,SQL,while,4
+/bigdata.sql,SQL,with,31
+/bigdata.sql,SQL,work,1
+/bigdata.sql,SQL,year,2
+/bigdata.sql,SQL,||,8
+/bigdata.sql,SQL,*,4
+/bigdata.sql,SQL,+,33
+/bigdata.sql,SQL,-,10
+/bigdata.sql,SQL,<=,3
+/bigdata.sql,SQL,<,1
+/bigdata.sql,SQL,>=,3
+/bigdata.sql,SQL,>,3

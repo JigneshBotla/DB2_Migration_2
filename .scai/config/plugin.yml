@@ -1,5 +1,5 @@
 code_source: extract
-committed_setup_tasks: registerCode
+committed_setup_tasks: registerCode,convertCode
 dashboard_port: 7882
 entry_mode: fresh
 git_enabled: true

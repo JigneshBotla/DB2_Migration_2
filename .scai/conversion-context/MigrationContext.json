@@ -1,0 +1,1482 @@
+{
+  "SYMBOLS": [
+    {
+      "NAME": "\u0022CUSTOMERS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "custno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "fname",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "lname",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "addr",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "city",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "state",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 2
+        },
+        {
+          "NAME": "zipcode",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 10
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022INVOICES\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "invcust",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "invno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "invdate",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "invsubt",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "invship",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 7,
+          "SCALE": 2
+        },
+        {
+          "NAME": "invtax",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 7,
+          "SCALE": 2
+        },
+        {
+          "NAME": "invtotal",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "invprom",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 10
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022PROMOTIONS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "promo_code",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 10
+        },
+        {
+          "NAME": "promo_name",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 60
+        },
+        {
+          "NAME": "discount_pct",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 5,
+          "SCALE": 2
+        },
+        {
+          "NAME": "start_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "end_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022PRODUCTS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "product_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "sku",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "product_name",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 100
+        },
+        {
+          "NAME": "category",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "list_price",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "active_flag",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 1
+        },
+        {
+          "NAME": "created_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        },
+        {
+          "NAME": "description",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CLOB",
+          "PRECISION": 1048576
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022INVOICE_LINES\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "line_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "invno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "line_no",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "SMALLINT"
+        },
+        {
+          "NAME": "product_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "quantity",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "unit_price",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "line_total",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022CUSTOMER_AUDIT\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "audit_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "custno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "action_cd",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 1
+        },
+        {
+          "NAME": "action_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        },
+        {
+          "NAME": "action_user",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 128
+        },
+        {
+          "NAME": "notes",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 200
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022CUSTOMER_SALES_SUMMARY\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "custno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "invoice_count",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "total_sales",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "last_invoice_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "refreshed_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022ORDERS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "order_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "order_no",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 8
+        },
+        {
+          "NAME": "custno",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "order_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "required_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "shipped_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "status",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 15
+        },
+        {
+          "NAME": "subtotal",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "tax_amount",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "freight_charge",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "total_amount",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "payment_method",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "payment_status",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 15
+        },
+        {
+          "NAME": "created_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        },
+        {
+          "NAME": "updated_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022ORDER_ITEMS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "item_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "order_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "line_no",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "SMALLINT"
+        },
+        {
+          "NAME": "product_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "quantity",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "unit_price",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "discount_pct",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 5,
+          "SCALE": 2
+        },
+        {
+          "NAME": "extended_price",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022INVENTORY\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "warehouse_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 4
+        },
+        {
+          "NAME": "product_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "on_hand_qty",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "allocated_qty",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "reorder_point",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "reorder_qty",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "safety_stock",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "bin_location",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "last_restock_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "last_audit_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022INVENTORY_TRANSACTIONS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "txn_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "txn_ts",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "TIMESTAMP"
+        },
+        {
+          "NAME": "product_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "warehouse_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "CHAR",
+          "PRECISION": 4
+        },
+        {
+          "NAME": "txn_type",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 15
+        },
+        {
+          "NAME": "quantity",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "reference_no",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "operator_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "notes",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 255
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022SEQ_AUDIT_BATCH\u0022",
+      "SYMBOLTYPE": "SEQUENCE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": []
+    },
+    {
+      "NAME": "\u0022SEQ_INVOICE_NO\u0022",
+      "SYMBOLTYPE": "SEQUENCE",
+      "SCHEMANAME": "\u0022BIGDATA \u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": []
+    },
+    {
+      "NAME": "FN_INVOICE_TOTAL",
+      "SYMBOLTYPE": "FUNCTION",
+      "RETURNTYPE": "DECIMAL",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "ISDETERMINISTIC": false,
+      "INNERSYMBOLS": [
+        {
+          "NAME": "p_subt",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "p_ship",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "DECIMAL",
+          "PRECISION": 7,
+          "SCALE": 2
+        },
+        {
+          "NAME": "p_tax",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "DECIMAL",
+          "PRECISION": 7,
+          "SCALE": 2
+        }
+      ]
+    },
+    {
+      "NAME": "FN_FORMAT_INVNO",
+      "SYMBOLTYPE": "FUNCTION",
+      "RETURNTYPE": "CHAR",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "ISDETERMINISTIC": false,
+      "INNERSYMBOLS": [
+        {
+          "NAME": "p_num",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        }
+      ]
+    },
+    {
+      "NAME": "FN_CUSTOMER_FULLNAME",
+      "SYMBOLTYPE": "FUNCTION",
+      "RETURNTYPE": "VARCHAR",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "ISDETERMINISTIC": false,
+      "INNERSYMBOLS": [
+        {
+          "NAME": "p_fname",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_lname",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        }
+      ]
+    },
+    {
+      "NAME": "V_CUSTOMER_INVOICES",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "custno",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "customer_name",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "String"
+            },
+            {
+              "NAME": "state",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invno",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invdate",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invtotal",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invprom",
+              "SYMBOLTYPE": "COLUMN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_INVOICE_DETAIL",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "invno",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invdate",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invcust",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "line_no",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "sku",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "product_name",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "quantity",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "unit_price",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "line_total",
+              "SYMBOLTYPE": "COLUMN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_MONTHLY_SALES",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "sales_year",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "sales_month",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invoice_count",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "total_sales",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "avg_invoice",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "AproxNumeric"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_PRODUCT_SALES",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "sku",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "product_name",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "category",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "units_sold",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "revenue",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_PROMO_USAGE",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "promo_code",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "promo_name",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "discount_pct",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "invoices_used",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "sales_with_promo",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_ORDER_FULFILLMENT_STATUS",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "order_id",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "order_no",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "custno",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "customer_name",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "String"
+            },
+            {
+              "NAME": "state",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "order_date",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "required_date",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "shipped_date",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "fulfillment_days",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "status",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "total_amount",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "item_count",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "total_units",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_INVENTORY_RESTOCK_ALERT",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "warehouse_id",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "product_id",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "sku",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "product_name",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "on_hand_qty",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "allocated_qty",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "available_qty",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "reorder_point",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "reorder_qty",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "safety_stock",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "bin_location",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "inventory_status",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "V_CUSTOMER_360_ORDERS",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "custno",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "customer_name",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "String"
+            },
+            {
+              "NAME": "city",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "state",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "total_orders",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "lifetime_order_value",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "AproxNumeric"
+            },
+            {
+              "NAME": "last_order_date",
+              "SYMBOLTYPE": "COLUMN"
+            },
+            {
+              "NAME": "open_orders_count",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NAME": "SP_ADD_CUSTOMER",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": "p_custno",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "p_fname",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_lname",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "p_addr",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "p_city",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_state",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 2
+        },
+        {
+          "NAME": "p_zip",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 10
+        },
+        {
+          "NAME": "p_status",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        }
+      ]
+    },
+    {
+      "NAME": "SP_CHECK_INVENTORY_SHORTAGE",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "p_critical_items_count",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "p_total_units_deficit",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_on_hand",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_allocated",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_reorder_pt",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_avail",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_at_end",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "SMALLINT"
+        }
+      ]
+    },
+    {
+      "NAME": "SP_PLACE_ORDER",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "state",
+              "SYMBOLTYPE": "COLUMN"
+            }
+          ]
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "order_id",
+              "SYMBOLTYPE": "COLUMN"
+            }
+          ]
+        },
+        {
+          "NAME": "p_custno",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "p_order_no",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 8
+        },
+        {
+          "NAME": "p_payment_method",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_subtotal",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "p_order_id",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "p_total_amount",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "v_cust_exists",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_tax",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "v_freight",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "DECIMAL",
+          "PRECISION": 9,
+          "SCALE": 2
+        },
+        {
+          "NAME": "v_state",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "CHAR",
+          "PRECISION": 2
+        }
+      ]
+    },
+    {
+      "NAME": "SP_REFRESH_CUSTOMER_SUMMARY",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": "p_rows",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_custno",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "v_count",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_total",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "DECIMAL",
+          "PRECISION": 11,
+          "SCALE": 2
+        },
+        {
+          "NAME": "v_last",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "v_at_end",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "SMALLINT"
+        }
+      ]
+    },
+    {
+      "NAME": "SP_RESTOCK_INVENTORY",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "on_hand_qty",
+              "SYMBOLTYPE": "COLUMN"
+            }
+          ]
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": "p_warehouse_id",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 4
+        },
+        {
+          "NAME": "p_product_id",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "p_restock_qty",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "p_operator_id",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_po_number",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "p_new_on_hand",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_current_qty",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        }
+      ]
+    },
+    {
+      "NAME": "SP_UPDATE_CUSTOMER_ADDRESS",
+      "SYMBOLTYPE": "PROCEDURE",
+      "SCHEMANAME": "",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": null,
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": "p_custno",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 6
+        },
+        {
+          "NAME": "p_addr",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 30
+        },
+        {
+          "NAME": "p_city",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 20
+        },
+        {
+          "NAME": "p_state",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "CHAR",
+          "PRECISION": 2
+        },
+        {
+          "NAME": "p_zip",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "VARCHAR",
+          "PRECISION": 10
+        },
+        {
+          "NAME": "p_rows",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "v_rows",
+          "SYMBOLTYPE": "LOCAL VARIABLE",
+          "TYPE": "INTEGER"
+        }
+      ]
+    }
+  ]
+}

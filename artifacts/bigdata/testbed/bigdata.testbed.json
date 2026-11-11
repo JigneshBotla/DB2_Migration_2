@@ -1,0 +1,52 @@
+{
+  "object": "SP_REFRESH_CUSTOMER_SUMMARY(INTEGER)",
+  "object_type": "PROCEDURE",
+  "branches": [
+    {
+      "branch_id": 0,
+      "construct_kind": "WHILE",
+      "line": 1069,
+      "predicate_text": "V_AT_END = 0",
+      "columns": [],
+      "predicate": {
+        "kind": "atom",
+        "operator": "=",
+        "values": [
+          "0"
+        ],
+        "parameter": "V_AT_END",
+        "operands": [
+          {
+            "kind": "parameter",
+            "parameter": "V_AT_END",
+            "text": "V_AT_END"
+          },
+          {
+            "kind": "literal",
+            "literal": "0",
+            "text": "0"
+          }
+        ]
+      }
+    }
+  ],
+  "predicates": [],
+  "edges": [],
+  "assignments": [],
+  "semi_anti": [],
+  "schema_version": 1,
+  "parameters": [
+    {
+      "name": "P_ROWS",
+      "type": "INTEGER",
+      "param_kind": "business_scalar",
+      "direction": "out",
+      "is_integer": true,
+      "is_number": true,
+      "is_string": false,
+      "is_date": false,
+      "is_boolean": false,
+      "is_binary": false
+    }
+  ]
+}

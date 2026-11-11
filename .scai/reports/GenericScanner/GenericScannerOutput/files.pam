@@ -1,0 +1,3 @@
+Path,Technology,FileKind,BinaryKind,Bytes,SupportedStatus
+/bigdata.sql,SQL,SourceCodeFile,NotBinary,32718,DoesNotApply,DoesNotApply
+/input.wsp,Other,Other,Unknown,46,DoesNotApply,DoesNotApply
