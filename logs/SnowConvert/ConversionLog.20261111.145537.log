@@ -1,0 +1,228 @@
+[11/11/2026 2:55:37 PM] Info: SourceLanguage set to DB2 based on the appsettings configuration.
+[11/11/2026 2:55:37 PM] Info: Conversion Engine process being executed with the following parameters:
+[11/11/2026 2:55:37 PM] Info: 	AccessLevel : General Availability
+[11/11/2026 2:55:37 PM] Info: 	AppType : cli
+[11/11/2026 2:55:37 PM] Info: 	AppVersion : 2.51.1-Pr
+[11/11/2026 2:55:37 PM] Info: 	ArtifactsPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/artifacts
+[11/11/2026 2:55:37 PM] Info: 	AssessmentDirectory : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/AssessmentModel
+[11/11/2026 2:55:37 PM] Info: 	CommonEF : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:37 PM] Info: 	CustomSchema : 
+[11/11/2026 2:55:37 PM] Info: 	DisableRegistry : true
+[11/11/2026 2:55:37 PM] Info: 	Encoding : 65001
+[11/11/2026 2:55:37 PM] Info: 	EtlTargetBasePath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+[11/11/2026 2:55:37 PM] Info: 	IsInputDirectory : True
+[11/11/2026 2:55:37 PM] Info: 	ProjectContextPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/conversion-context
+[11/11/2026 2:55:37 PM] Info: 	ProjectPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337
+[11/11/2026 2:55:37 PM] Info: 	SnowflakeAccountId : UMPZSVT-AE94328
+[11/11/2026 2:55:37 PM] Info: 	SnowflakeUser : JIGNESH
+[11/11/2026 2:55:37 PM] Info: 	SourceLanguage : Db2
+[11/11/2026 2:55:37 PM] Info: 	WorkingDirectory : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+[11/11/2026 2:55:41 PM] Info: Starting to analyze the input path '/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source'...
+[11/11/2026 2:55:41 PM] Info: [Store] inputFileCount=1
+[11/11/2026 2:55:41 PM] Info: EFProcess 639299859414187780 started
+[11/11/2026 2:55:41 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:41 PM] Debug: TaskParam ConversionBeginTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:41 PM] Debug: TaskParam workingSet = Value is not created.
+[11/11/2026 2:55:41 PM] Debug: TaskParam ConversionBeginTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:41 PM] Debug: TaskParam ConversionBeginTask.Enabled = True
+[11/11/2026 2:55:41 PM] Debug: TaskParam Repository = Value is not created.
+[11/11/2026 2:55:41 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:41 PM] Info: Found 1 Sql files with a total size of 31.95KB
+[11/11/2026 2:55:41 PM] Info: Starting the parsing process of 1 file with 31.95KB of code, this might take a while...
+[11/11/2026 2:55:41 PM] Info: Step 1/8 - Loading Code: STARTED
+[11/11/2026 2:55:41 PM] Warning: Multiple providers (Mobilize.Ansi.Script.Parser.AnsisLoaderProvider, Mobilize.Databricks.Script.Parser.DbxsLoaderProvider, Mobilize.Hv.Script.Parser.HvsLoaderProvider, Mobilize.Spark.Script.Parser.SparksLoaderProvider) for item .hql were found. Using first one.
+[11/11/2026 2:55:42 PM] Info: Parsed [1] bigdata.sql
+[11/11/2026 2:55:42 PM] Error: There are 56 parsing errors in the file /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata.sql
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(471, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '471' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '467' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(482, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '482' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '478' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(493, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '493' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '489' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(528, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '528' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '524' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(552, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '552' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '548' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(563, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '563' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '559' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(599, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '599' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '595' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(610, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '610' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '606' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(634, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '634' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '630' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(645, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '645' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '641' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(669, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '669' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '665' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(689, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '689' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '677' COLUMN '27'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(690, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '690' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '689' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(691, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '691' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '690' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(704, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '704' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '701' COLUMN '33'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(705, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '705' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '704' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(706, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '706' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '705' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(718, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '718' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '715' COLUMN '33'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(719, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '719' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '718' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(720, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '720' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '719' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(737, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '737' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '729' COLUMN '49'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(738, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '738' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '737' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(753, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '753' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '750' COLUMN '29'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(754, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '754' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '753' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(771, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '771' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '768' COLUMN '58'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(772, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '772' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '771' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(784, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '784' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '781' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(785, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '785' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '784' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(799, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '799' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '796' COLUMN '43'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(800, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '800' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '799' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(814, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '814' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '811' COLUMN '52'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(815, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '815' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '814' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(841, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '841' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '838' COLUMN '81'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(842, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '842' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '841' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(866, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '866' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '863' COLUMN '59'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(867, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '867' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '866' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(891, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '891' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '880' COLUMN '53'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(892, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '892' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '891' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(893, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '893' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '892' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(922, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '922' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '920' COLUMN '4'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(923, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '923' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '922' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(924, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '924' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '923' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(965, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '965' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '963' COLUMN '4'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(966, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '966' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '965' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(967, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '967' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '966' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1038, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1038' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1036' COLUMN '1'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1039, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1039' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1038' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1040, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1040' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1039' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1081, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1081' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1079' COLUMN '4'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1082, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1082' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1081' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1083, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1083' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1082' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1137, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1137' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1135' COLUMN '4'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1138, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1138' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1137' COLUMN '39'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1139, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1139' COLUMN '1' OF THE SOURCE CODE STARTING AT 'SET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1138' COLUMN '32'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1173, 8): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1173' COLUMN '8' OF THE SOURCE CODE STARTING AT 'RESET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1171' COLUMN '11'. FAILED TOKEN WAS 'RESET' ON LINE '1173' COLUMN '8'. ** 
+[11/11/2026 2:55:42 PM] Error: bigdata.sql(1175, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1175' COLUMN '1' OF THE SOURCE CODE STARTING AT 'TERMINATE'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1173' COLUMN '13'. ** 
+[11/11/2026 2:55:42 PM] Info: Step 1/8 - Loading Code: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:42 PM] Debug: TaskParam DynamicSqlAnalysisTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam DynamicSqlAnalysisTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam DynamicSqlAnalysisTask.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 2/8 - Dynamic SQL Analysis: STARTED
+[11/11/2026 2:55:42 PM] Warning: Multiple providers (Mobilize.Ansi.Script.Parser.AnsisLoaderProvider, Mobilize.Databricks.Script.Parser.DbxsLoaderProvider, Mobilize.Hv.Script.Parser.HvsLoaderProvider, Mobilize.Spark.Script.Parser.SparksLoaderProvider) for item .hql were found. Using first one.
+[11/11/2026 2:55:42 PM] Info: Step 2/8 - Dynamic SQL Analysis: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingTask.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 2/8 - Semantic Analysis of Tables: STARTED
+[11/11/2026 2:55:42 PM] Info: Step 2/8 - Semantic Analysis of Tables: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingSecondTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingSecondTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam SymbolTableFillingSecondTask.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STARTED
+[11/11/2026 2:55:42 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORING
+[11/11/2026 2:55:42 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORED
+[11/11/2026 2:55:42 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreProcessTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreProcessTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreProcessTask.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 4/8 - Pre-Processing: STARTED
+[11/11/2026 2:55:42 PM] Info: Step 4/8 - Pre-Processing: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam Lineage.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam Lineage.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam Lineage.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 5/8 - Data lineage analysis: STARTED
+[11/11/2026 2:55:42 PM] Info: Step 5/8 - Data lineage analysis: COMPLETED
+[11/11/2026 2:55:42 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreConversionAssessmentTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:42 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreConversionAssessmentTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:42 PM] Debug: TaskParam PreConversionAssessmentTask.Enabled = True
+[11/11/2026 2:55:42 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:42 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:42 PM] Info: Step 6/8 - Pre-Conversion Assessment: STARTED
+[11/11/2026 2:55:43 PM] Info: Step 6/8 - Pre-Conversion Assessment: COMPLETED
+[11/11/2026 2:55:43 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 2:55:43 PM] Debug: TaskParam TransformationsTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:43 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:43 PM] Debug: TaskParam TransformationsTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:43 PM] Debug: TaskParam TransformationsTask.Enabled = True
+[11/11/2026 2:55:43 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:43 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:43 PM] Info: Step 7/8 - Conversion Execution: STARTED
+[11/11/2026 2:55:43 PM] Info: Start transforming file bigdata.sql
+[11/11/2026 2:55:43 PM] Info: Transformed file bigdata.sql
+[11/11/2026 2:55:43 PM] Info: POWER BI: Starting repointing.
+[11/11/2026 2:55:43 PM] Info: POWER BI: Finishing repointing.
+[11/11/2026 2:55:43 PM] Info: [AgentJob] No Agent Job definitions detected in this migration
+[11/11/2026 2:55:43 PM] Info: Step 7/8 - Conversion Execution: COMPLETED
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolPartialFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:43 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolPartialFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolPartialFillingTask.Enabled = True
+[11/11/2026 2:55:43 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:43 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolFullFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:43 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolFullFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:43 PM] Debug: TaskParam TargetSymbolFullFillingTask.Enabled = True
+[11/11/2026 2:55:43 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:43 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:43 PM] Debug: TaskParam SnowScript = False
+[11/11/2026 2:55:43 PM] Debug: TaskParam reportPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/reports/SnowConvert
+[11/11/2026 2:55:43 PM] Debug: TaskParam totalProcessedLOC = 0
+[11/11/2026 2:55:43 PM] Debug: TaskParam inputPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source
+[11/11/2026 2:55:43 PM] Debug: TaskParam outputPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert
+[11/11/2026 2:55:43 PM] Debug: TaskParam SessionTimestamp = 20261111.145537
+[11/11/2026 2:55:43 PM] Debug: TaskParam snowConfiguration = Mobilize.Snow.Configuration.SnowConfiguration
+[11/11/2026 2:55:43 PM] Debug: TaskParam DashboardMode = False
+[11/11/2026 2:55:43 PM] Debug: TaskParam writeResultsProgressDescriptor = Mobilize.Common.Utils.Progress.SingleProgressDescriptor
+[11/11/2026 2:55:43 PM] Debug: TaskParam snowExecutionResult = Mobilize.Snow.Assessment.SnowExecutionResult
+[11/11/2026 2:55:43 PM] Debug: TaskParam ConversionEndTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 2:55:43 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 2:55:43 PM] Debug: TaskParam ConversionEndTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 2:55:43 PM] Debug: TaskParam ConversionEndTask.Enabled = True
+[11/11/2026 2:55:43 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 2:55:43 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 2:55:43 PM] Info: EFProcess 639299859414187780 ended. Execution time: 00:00:02.2440383
+[11/11/2026 2:55:43 PM] Info: STARTED Step 8/8: Stats and Reports
+[11/11/2026 2:55:43 PM] Info: Writing the object dependencies report
+[11/11/2026 2:55:43 PM] Info: Writing the top level code unit report
+[11/11/2026 2:55:44 PM] Info: Writing the Issues report
+[11/11/2026 2:55:44 PM] Info: Writing the object references report
+[11/11/2026 2:55:44 PM] Info: Writing the sql objects report
+[11/11/2026 2:55:44 PM] Info: Writing the Functions Usage Report report
+[11/11/2026 2:55:44 PM] Info: Writing the Elements report
+[11/11/2026 2:55:44 PM] Info: Writing the ETL and BI repointing report
+[11/11/2026 2:55:44 PM] Info: [Testbed] Wrote 20 artifact(s).
+[11/11/2026 2:55:44 PM] Info: Writing the conversion summary report
+[11/11/2026 2:55:44 PM] Info: Writing the Assessment report
+[11/11/2026 2:55:44 PM] Info: Writing the Scope Validations report
+[11/11/2026 2:55:44 PM] Info: Writing the raw assessment data report
+[11/11/2026 2:55:44 PM] Info: Uploading metadata
+[11/11/2026 2:55:44 PM] Info: COMPLETED Step 8/8: Stats and Reports
+[11/11/2026 2:55:44 PM] Info: 
+==============================================================================
+SnowConvert assessment execution summary
+ - Files: 1
+ - Files Not Generated: 0
+ - Total lines of code: 924
+ - Automatically converted: 84.22%
+ - Conversion time: 00:00:02
+ - Conversion speed: 350 lines of code per second
+See the report files for more details about the conversion status.
+==============================================================================
+
+[11/11/2026 2:55:44 PM] Info: 
+==============================================================================
+SnowConvert Tool.
+Copyright © 2023-2026 Snowflake Inc. All rights reserved.
+==============================================================================
+
+[11/11/2026 2:55:44 PM] Info: Post-processing Code: STARTED
+[11/11/2026 2:55:44 PM] Info: Executing post-process task: 'dbt Jinja Post-Process Task'
+[11/11/2026 2:55:44 PM] Info: Post-processing Code: COMPLETED

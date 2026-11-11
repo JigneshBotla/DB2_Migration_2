@@ -1,0 +1,17 @@
+[11/11/2026 9:38:52 AM] Info: ========================================
+[11/11/2026 9:38:52 AM] Info: Starting Code Add
+[11/11/2026 9:38:52 AM] Info: ========================================
+[11/11/2026 9:38:52 AM] Info: Input Path: db2_ddl/bigdata_clean.sql
+[11/11/2026 9:38:52 AM] Info: Source Dialect: Db2
+[11/11/2026 9:38:52 AM] Info: Overwrite: True
+[11/11/2026 9:38:52 AM] Info: Code Already Split: False
+[11/11/2026 9:38:52 AM] Info: ========================================
+[11/11/2026 9:38:52 AM] Info: Adding bigdata_clean.sql (27224 bytes) -> bigdata_clean.sql
+[11/11/2026 9:38:52 AM] Info: ========================================
+[11/11/2026 9:38:52 AM] Info: Code Add Completed Successfully
+[11/11/2026 9:38:52 AM] Info: Total Files: 1
+[11/11/2026 9:38:52 AM] Info: Successful: 1
+[11/11/2026 9:38:52 AM] Info: Failed: 0
+[11/11/2026 9:38:52 AM] Info: Total Size: 27224 bytes
+[11/11/2026 9:38:52 AM] Info: Execution Time: 00:00:00
+[11/11/2026 9:38:52 AM] Info: ========================================

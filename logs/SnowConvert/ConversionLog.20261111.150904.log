@@ -1,0 +1,176 @@
+[11/11/2026 3:09:04 PM] Info: SourceLanguage set to DB2 based on the appsettings configuration.
+[11/11/2026 3:09:04 PM] Info: Conversion Engine process being executed with the following parameters:
+[11/11/2026 3:09:04 PM] Info: 	AccessLevel : General Availability
+[11/11/2026 3:09:04 PM] Info: 	AppType : cli
+[11/11/2026 3:09:04 PM] Info: 	AppVersion : 2.51.1-Pr
+[11/11/2026 3:09:04 PM] Info: 	ArtifactsPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/artifacts
+[11/11/2026 3:09:04 PM] Info: 	AssessmentDirectory : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/AssessmentModel
+[11/11/2026 3:09:04 PM] Info: 	CommonEF : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:04 PM] Info: 	CustomSchema : 
+[11/11/2026 3:09:04 PM] Info: 	DisableRegistry : true
+[11/11/2026 3:09:04 PM] Info: 	Encoding : 65001
+[11/11/2026 3:09:04 PM] Info: 	EtlTargetBasePath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+[11/11/2026 3:09:04 PM] Info: 	IsInputDirectory : True
+[11/11/2026 3:09:04 PM] Info: 	OverwriteWorkingDirectory : true
+[11/11/2026 3:09:04 PM] Info: 	ProjectContextPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/conversion-context
+[11/11/2026 3:09:04 PM] Info: 	ProjectPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337
+[11/11/2026 3:09:04 PM] Info: 	SnowflakeAccountId : UMPZSVT-AE94328
+[11/11/2026 3:09:04 PM] Info: 	SnowflakeUser : JIGNESH
+[11/11/2026 3:09:04 PM] Info: 	SourceLanguage : Db2
+[11/11/2026 3:09:04 PM] Info: 	UserProvidedSymbolsPath : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/conversion-context
+[11/11/2026 3:09:04 PM] Info: 	WorkingDirectory : /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+[11/11/2026 3:09:08 PM] Info: Starting to analyze the input path '/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source'...
+[11/11/2026 3:09:08 PM] Info: [Store] inputFileCount=1
+[11/11/2026 3:09:09 PM] Info: EFProcess 639299867489699440 started
+[11/11/2026 3:09:09 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:09 PM] Debug: TaskParam ConversionBeginTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:09 PM] Debug: TaskParam workingSet = Value is not created.
+[11/11/2026 3:09:09 PM] Debug: TaskParam ConversionBeginTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:09 PM] Debug: TaskParam ConversionBeginTask.Enabled = True
+[11/11/2026 3:09:09 PM] Debug: TaskParam Repository = Value is not created.
+[11/11/2026 3:09:09 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:09 PM] Info: Found 1 Sql files with a total size of 26.59KB
+[11/11/2026 3:09:09 PM] Info: Starting the parsing process of 1 file with 26.59KB of code, this might take a while...
+[11/11/2026 3:09:09 PM] Info: Step 1/8 - Loading Code: STARTED
+[11/11/2026 3:09:09 PM] Warning: Multiple providers (Mobilize.Ansi.Script.Parser.AnsisLoaderProvider, Mobilize.Databricks.Script.Parser.DbxsLoaderProvider, Mobilize.Hv.Script.Parser.HvsLoaderProvider, Mobilize.Spark.Script.Parser.SparksLoaderProvider) for item .hql were found. Using first one.
+[11/11/2026 3:09:09 PM] Info: Parsed [1] bigdata_clean.sql
+[11/11/2026 3:09:09 PM] Error: There are 2 parsing errors in the file /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql
+[11/11/2026 3:09:09 PM] Error: bigdata_clean.sql(1052, 8): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1052' COLUMN '8' OF THE SOURCE CODE STARTING AT 'RESET'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1050' COLUMN '11'. FAILED TOKEN WAS 'RESET' ON LINE '1052' COLUMN '8'. ** 
+[11/11/2026 3:09:09 PM] Error: bigdata_clean.sql(1054, 1): ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '1054' COLUMN '1' OF THE SOURCE CODE STARTING AT 'TERMINATE'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '1052' COLUMN '13'. ** 
+[11/11/2026 3:09:09 PM] Info: Step 1/8 - Loading Code: COMPLETED
+[11/11/2026 3:09:09 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:09 PM] Debug: TaskParam DynamicSqlAnalysisTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:09 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:09 PM] Debug: TaskParam DynamicSqlAnalysisTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:09 PM] Debug: TaskParam DynamicSqlAnalysisTask.Enabled = True
+[11/11/2026 3:09:09 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:09 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:09 PM] Info: Step 2/8 - Dynamic SQL Analysis: STARTED
+[11/11/2026 3:09:09 PM] Warning: Multiple providers (Mobilize.Ansi.Script.Parser.AnsisLoaderProvider, Mobilize.Databricks.Script.Parser.DbxsLoaderProvider, Mobilize.Hv.Script.Parser.HvsLoaderProvider, Mobilize.Spark.Script.Parser.SparksLoaderProvider) for item .hql were found. Using first one.
+[11/11/2026 3:09:10 PM] Info: Step 2/8 - Dynamic SQL Analysis: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingTask.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 2/8 - Semantic Analysis of Tables: STARTED
+[11/11/2026 3:09:10 PM] Info: Step 2/8 - Semantic Analysis of Tables: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingSecondTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingSecondTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam SymbolTableFillingSecondTask.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STARTED
+[11/11/2026 3:09:10 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORING
+[11/11/2026 3:09:10 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: STORED
+[11/11/2026 3:09:10 PM] Info: Step 3/8 - Semantic Analysis of Top Level Objects: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreProcessTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreProcessTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreProcessTask.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 4/8 - Pre-Processing: STARTED
+[11/11/2026 3:09:10 PM] Info: Step 4/8 - Pre-Processing: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam Lineage.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam Lineage.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam Lineage.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 5/8 - Data lineage analysis: STARTED
+[11/11/2026 3:09:10 PM] Info: Step 5/8 - Data lineage analysis: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreConversionAssessmentTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreConversionAssessmentTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam PreConversionAssessmentTask.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 6/8 - Pre-Conversion Assessment: STARTED
+[11/11/2026 3:09:10 PM] Info: Step 6/8 - Pre-Conversion Assessment: COMPLETED
+[11/11/2026 3:09:10 PM] Debug: TaskParam TaskProvider = Mobilize.Snow.Common.SnowConvertTaskProvider
+[11/11/2026 3:09:10 PM] Debug: TaskParam TransformationsTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:10 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:10 PM] Debug: TaskParam TransformationsTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:10 PM] Debug: TaskParam TransformationsTask.Enabled = True
+[11/11/2026 3:09:10 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:10 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:10 PM] Info: Step 7/8 - Conversion Execution: STARTED
+[11/11/2026 3:09:10 PM] Info: Start transforming file bigdata_clean.sql
+[11/11/2026 3:09:11 PM] Info: Transformed file bigdata_clean.sql
+[11/11/2026 3:09:11 PM] Info: POWER BI: Starting repointing.
+[11/11/2026 3:09:11 PM] Info: POWER BI: Finishing repointing.
+[11/11/2026 3:09:11 PM] Info: [AgentJob] No Agent Job definitions detected in this migration
+[11/11/2026 3:09:11 PM] Info: Step 7/8 - Conversion Execution: COMPLETED
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolPartialFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:11 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolPartialFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolPartialFillingTask.Enabled = True
+[11/11/2026 3:09:11 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:11 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolFullFillingTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:11 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolFullFillingTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:11 PM] Debug: TaskParam TargetSymbolFullFillingTask.Enabled = True
+[11/11/2026 3:09:11 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:11 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:11 PM] Debug: TaskParam SnowScript = False
+[11/11/2026 3:09:11 PM] Debug: TaskParam reportPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/reports/SnowConvert
+[11/11/2026 3:09:11 PM] Debug: TaskParam totalProcessedLOC = 0
+[11/11/2026 3:09:11 PM] Debug: TaskParam inputPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source
+[11/11/2026 3:09:11 PM] Debug: TaskParam outputPath = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert
+[11/11/2026 3:09:11 PM] Debug: TaskParam SessionTimestamp = 20261111.150904
+[11/11/2026 3:09:11 PM] Debug: TaskParam snowConfiguration = Mobilize.Snow.Configuration.SnowConfiguration
+[11/11/2026 3:09:11 PM] Debug: TaskParam DashboardMode = False
+[11/11/2026 3:09:11 PM] Debug: TaskParam writeResultsProgressDescriptor = Mobilize.Common.Utils.Progress.SingleProgressDescriptor
+[11/11/2026 3:09:11 PM] Debug: TaskParam snowExecutionResult = Mobilize.Snow.Assessment.SnowExecutionResult
+[11/11/2026 3:09:11 PM] Debug: TaskParam ConversionEndTask.Input = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/input.wsp
+[11/11/2026 3:09:11 PM] Debug: TaskParam workingSet = Artinsoft.Common.Store.RepositoryWorkingSet
+[11/11/2026 3:09:11 PM] Debug: TaskParam ConversionEndTask.ItemMetadata = Artinsoft.Common.Store.ItemMetadata
+[11/11/2026 3:09:11 PM] Debug: TaskParam ConversionEndTask.Enabled = True
+[11/11/2026 3:09:11 PM] Debug: TaskParam Repository = Artinsoft.Common.Store.Repository
+[11/11/2026 3:09:11 PM] Debug: TaskParam RepositoryDirectory = /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/.snowconvert/.mobilize/CommonEF
+[11/11/2026 3:09:11 PM] Info: EFProcess 639299867489699440 ended. Execution time: 00:00:02.1440545
+[11/11/2026 3:09:11 PM] Info: STARTED Step 8/8: Stats and Reports
+[11/11/2026 3:09:11 PM] Info: Writing the object dependencies report
+[11/11/2026 3:09:11 PM] Info: Writing the top level code unit report
+[11/11/2026 3:09:11 PM] Info: Writing the Issues report
+[11/11/2026 3:09:11 PM] Info: Writing the object references report
+[11/11/2026 3:09:11 PM] Info: Writing the sql objects report
+[11/11/2026 3:09:11 PM] Info: Writing the Functions Usage Report report
+[11/11/2026 3:09:11 PM] Info: Writing the Elements report
+[11/11/2026 3:09:11 PM] Info: Writing the ETL and BI repointing report
+[11/11/2026 3:09:11 PM] Info: [Testbed] Wrote 20 artifact(s).
+[11/11/2026 3:09:11 PM] Info: Writing the conversion summary report
+[11/11/2026 3:09:11 PM] Info: Writing the Assessment report
+[11/11/2026 3:09:11 PM] Info: Writing the Scope Validations report
+[11/11/2026 3:09:11 PM] Info: Writing the raw assessment data report
+[11/11/2026 3:09:12 PM] Info: Uploading metadata
+[11/11/2026 3:09:12 PM] Info: COMPLETED Step 8/8: Stats and Reports
+[11/11/2026 3:09:12 PM] Info: 
+==============================================================================
+SnowConvert assessment execution summary
+ - Files: 1
+ - Files Not Generated: 0
+ - Total lines of code: 803
+ - Automatically converted: 91.74%
+ - Conversion time: 00:00:02
+ - Conversion speed: 306 lines of code per second
+See the report files for more details about the conversion status.
+==============================================================================
+
+[11/11/2026 3:09:12 PM] Info: 
+==============================================================================
+SnowConvert Tool.
+Copyright © 2023-2026 Snowflake Inc. All rights reserved.
+==============================================================================
+
+[11/11/2026 3:09:12 PM] Info: Post-processing Code: STARTED
+[11/11/2026 3:09:12 PM] Info: Executing post-process task: 'dbt Jinja Post-Process Task'
+[11/11/2026 3:09:12 PM] Info: Post-processing Code: COMPLETED

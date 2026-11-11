@@ -1,0 +1,44 @@
+[11/11/2026 3:10:42 PM] Debug: Session id: ddac70f1-109f-4bda-ba97-145d95a0ae89
+[11/11/2026 3:10:42 PM] Debug: Code Processor information: Name :SnowConvert, Version: 2.51.1.0
+[11/11/2026 3:10:42 PM] Info: Starting to validate parameters
+[11/11/2026 3:10:42 PM] Info: Parameters to validate: 
+	Execution mode: Conversion
+	SourceLanguage: Db2
+	DisableRegistry: true
+	OverwriteWorkingDirectory: true
+	ProjectContextPath: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/conversion-context
+	UserProvidedSymbolsPath: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/.scai/conversion-context
+	Encoding: 65001
+	SnowflakeAccountId: UMPZSVT-AE94328
+	SnowflakeUser: JIGNESH
+	AppType: cli
+	ProjectPath: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337
+	WorkingDirectory: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+	ArtifactsPath: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/artifacts
+	EtlTargetBasePath: /Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/snowflake
+[11/11/2026 3:10:42 PM] Info: Validation of parameters: Success
+[11/11/2026 3:10:42 PM] Debug: Getting code descriptor
+[11/11/2026 3:10:42 PM] Debug: Code descriptor information
+	Units: 801
+	Units type: LOC
+	All file bytes: 27270
+	All found extensions: .sql
+[11/11/2026 3:10:42 PM] Debug: Calculating fingerprint
+[11/11/2026 3:10:42 PM] Debug: Fingerprint information Fingerprint(size=27270,projects=1)
+[11/11/2026 3:10:42 PM] Info: Starting to validate active license
+[11/11/2026 3:10:42 PM] Info: The product does not require a license, there is not a license to validate.
+[11/11/2026 3:10:42 PM] Info: Active license validation: Success
+[11/11/2026 3:10:42 PM] Debug: License information
+[11/11/2026 3:10:42 PM] Debug: Getting license
+[11/11/2026 3:10:42 PM] Info: The product does not require a license, there is not an active license.
+[11/11/2026 3:10:42 PM] Debug: License information
+	Status: Successful
+[11/11/2026 3:10:42 PM] Debug: Starting the execution of the controller
+[11/11/2026 3:10:42 PM] Debug: Executing the worker: SnowConvert
+[11/11/2026 3:10:51 PM] Debug: Finished executing the worker: SnowConvert
+[11/11/2026 3:10:51 PM] Debug: Executing the worker: GenericScanner
+[11/11/2026 3:10:51 PM] Debug: Finished executing the worker: GenericScanner
+[11/11/2026 3:10:52 PM] Info: The product does not require a license, the workload will not be applied.
+[11/11/2026 3:10:52 PM] Info: Controller execution ended
+[11/11/2026 3:10:52 PM] Info: Starting to upload the Assessment results
+[11/11/2026 3:10:54 PM] Info: Successful assessment upload

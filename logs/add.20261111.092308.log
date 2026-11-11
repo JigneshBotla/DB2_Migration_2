@@ -1,0 +1,17 @@
+[11/11/2026 9:23:08 AM] Info: ========================================
+[11/11/2026 9:23:08 AM] Info: Starting Code Add
+[11/11/2026 9:23:08 AM] Info: ========================================
+[11/11/2026 9:23:08 AM] Info: Input Path: artifacts/source_split
+[11/11/2026 9:23:08 AM] Info: Source Dialect: Db2
+[11/11/2026 9:23:08 AM] Info: Overwrite: False
+[11/11/2026 9:23:08 AM] Info: Code Already Split: False
+[11/11/2026 9:23:08 AM] Info: ========================================
+[11/11/2026 9:23:08 AM] Info: Adding bigdata.sql (32718 bytes) -> bigdata.sql
+[11/11/2026 9:23:08 AM] Info: ========================================
+[11/11/2026 9:23:08 AM] Info: Code Add Completed Successfully
+[11/11/2026 9:23:08 AM] Info: Total Files: 1
+[11/11/2026 9:23:08 AM] Info: Successful: 1
+[11/11/2026 9:23:08 AM] Info: Failed: 0
+[11/11/2026 9:23:08 AM] Info: Total Size: 32718 bytes
+[11/11/2026 9:23:08 AM] Info: Execution Time: 00:00:00
+[11/11/2026 9:23:08 AM] Info: ========================================

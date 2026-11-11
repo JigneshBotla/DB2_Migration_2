@@ -1,0 +1,2 @@
+FILE_NAME,FILE_PATH,FILE_SIZE_BYTES,STATUS,STAGE,ERROR_MESSAGE
+bigdata_clean.sql,bigdata_clean.sql,27224,Processed,Succeeded,

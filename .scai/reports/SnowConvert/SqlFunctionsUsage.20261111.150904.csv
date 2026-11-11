@@ -1,0 +1,13 @@
+Function,Count,Category,MigrationStatus
+MAX,2,Built_In,Transformation
+SUM,8,Built_In,Transformation
+COUNT,5,Built_In,Transformation
+ROUND,2,Built_In,Transformation
+COALESCE,5,Built_In,Transformation
+RTRIM,8,Built_In,Transformation
+DAYS,2,Built_In,Pending
+AVG,1,Built_In,Transformation
+MONTH,1,Built_In,Transformation
+YEAR,1,Built_In,Transformation
+RIGHT,1,Built_In,Transformation
+DIGITS,1,Built_In,Pending
