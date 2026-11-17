@@ -1,3 +1,10 @@
 FileName,Extension,Technology,Status,isBinary,Bytes,ContentType,ContentLines,CommentLines,BlankLines
-/bigdata.sql,sql,SQL,OK,FALSE,32718,Code,768,156,253
-/input.wsp,wsp,Other,OK,UNKNOWN,46,Other,2,0,0
+/bigdata_clean.sql,sql,SQL,OK,FALSE,27270,Code,711,90,251
+/input.wsp,wsp,Other,OK,UNKNOWN,308,Other,8,0,0
+/Medalliion/Bronze/01_bronze_ddl.sql,sql,SQL,OK,FALSE,4844,Code,84,15,5
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,sql,SQL,OK,FALSE,8776,Code,151,24,5
+/Medalliion/Silver/02_silver_cleansing_transform.sql,sql,SQL,OK,FALSE,15416,Code,364,33,6
+/Medalliion/Silver/01_silver_ddl.sql,sql,SQL,OK,FALSE,4628,Code,82,12,5
+/Medalliion/Gold/01_gold_ddl.sql,sql,SQL,OK,FALSE,4671,Code,82,11,5
+/Medalliion/Gold/02_gold_analytics_transform.sql,sql,SQL,OK,FALSE,16282,Code,306,49,5
+/uploads/pasted-image-20261111-160629.png,png,Other,OK,TRUE,334857,Other,0,0,0

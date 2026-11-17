@@ -1,3 +1,10 @@
 Path,Technology,FileKind,BinaryKind,Bytes,SupportedStatus
-/bigdata.sql,SQL,SourceCodeFile,NotBinary,32718,DoesNotApply,DoesNotApply
-/input.wsp,Other,Other,Unknown,46,DoesNotApply,DoesNotApply
+/bigdata_clean.sql,SQL,SourceCodeFile,NotBinary,27270,DoesNotApply,DoesNotApply
+/input.wsp,Other,Other,Unknown,308,DoesNotApply,DoesNotApply
+/Medalliion/Bronze/01_bronze_ddl.sql,SQL,SourceCodeFile,NotBinary,4844,DoesNotApply,DoesNotApply
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,SQL,SourceCodeFile,NotBinary,8776,DoesNotApply,DoesNotApply
+/Medalliion/Silver/02_silver_cleansing_transform.sql,SQL,SourceCodeFile,NotBinary,15416,DoesNotApply,DoesNotApply
+/Medalliion/Silver/01_silver_ddl.sql,SQL,SourceCodeFile,NotBinary,4628,DoesNotApply,DoesNotApply
+/Medalliion/Gold/01_gold_ddl.sql,SQL,SourceCodeFile,NotBinary,4671,DoesNotApply,DoesNotApply
+/Medalliion/Gold/02_gold_analytics_transform.sql,SQL,SourceCodeFile,NotBinary,16282,DoesNotApply,DoesNotApply
+/uploads/pasted-image-20261111-160629.png,Other,Other,Binary,334857,DoesNotApply,DoesNotApply

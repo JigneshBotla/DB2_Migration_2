@@ -3,6 +3,11 @@
 .scai/config/plugin.local.yml
 .scai/config/profiles.local.yaml
 
+# Session transcripts and pasted attachments (may contain sensitive context)
+.scai/conversations/
+.scai/object-chat-index.json
+source/uploads/
+
 # Local Data Exchange Worker config
 .scai/config/dew_configuration.toml
 
@@ -20,3 +25,10 @@ assessment/*.pdf
 # OS files
 .DS_Store
 Thumbs.db
+
+# scai migration plugin: background relay state
+/.scai/monitor/
+
+# Machine-local setup state — not shared with teammates
+.scai/setup-checkpoint.json
+.scai/setup-idempotency.json

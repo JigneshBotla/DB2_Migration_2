@@ -1,0 +1,71 @@
+-- Replacements for DB2's ON DELETE CASCADE, which Snowflake does not enforce.
+--
+-- DB2 declared:
+--   LINES_INV_FK   INVOICE_LINES.INVNO    -> INVOICES.INVNO    ON DELETE CASCADE
+--   ITEMS_ORDER_FK ORDER_ITEMS.ORDER_ID   -> ORDERS.ORDER_ID   ON DELETE CASCADE
+--
+-- Snowflake accepts those FK declarations as metadata but does not act on them,
+-- so a plain DELETE against the parent leaves orphaned child rows with no error.
+-- Use these procedures instead of deleting from INVOICES or ORDERS directly.
+
+CREATE OR REPLACE PROCEDURE SP_DELETE_INVOICE(P_INVNO CHAR(6))
+RETURNS OBJECT
+LANGUAGE SQL
+COMMENT = 'Deletes an invoice and its INVOICE_LINES children in one transaction. Replaces DB2 LINES_INV_FK ON DELETE CASCADE.'
+AS
+$$
+DECLARE
+  V_LINES    INTEGER DEFAULT 0;
+  V_INVOICES INTEGER DEFAULT 0;
+BEGIN
+  BEGIN TRANSACTION;
+
+  DELETE FROM INVOICE_LINES WHERE INVNO = :P_INVNO;
+  V_LINES := SQLROWCOUNT;
+
+  DELETE FROM INVOICES WHERE INVNO = :P_INVNO;
+  V_INVOICES := SQLROWCOUNT;
+
+  COMMIT;
+
+  RETURN OBJECT_CONSTRUCT(
+    'invno',            :P_INVNO,
+    'lines_deleted',    V_LINES,
+    'invoices_deleted', V_INVOICES);
+EXCEPTION
+  WHEN OTHER THEN
+    ROLLBACK;
+    RAISE;
+END
+$$;
+
+CREATE OR REPLACE PROCEDURE SP_DELETE_ORDER(P_ORDER_ID INTEGER)
+RETURNS OBJECT
+LANGUAGE SQL
+COMMENT = 'Deletes an order and its ORDER_ITEMS children in one transaction. Replaces DB2 ITEMS_ORDER_FK ON DELETE CASCADE.'
+AS
+$$
+DECLARE
+  V_ITEMS  INTEGER DEFAULT 0;
+  V_ORDERS INTEGER DEFAULT 0;
+BEGIN
+  BEGIN TRANSACTION;
+
+  DELETE FROM ORDER_ITEMS WHERE ORDER_ID = :P_ORDER_ID;
+  V_ITEMS := SQLROWCOUNT;
+
+  DELETE FROM ORDERS WHERE ORDER_ID = :P_ORDER_ID;
+  V_ORDERS := SQLROWCOUNT;
+
+  COMMIT;
+
+  RETURN OBJECT_CONSTRUCT(
+    'order_id',      :P_ORDER_ID,
+    'items_deleted', V_ITEMS,
+    'orders_deleted', V_ORDERS);
+EXCEPTION
+  WHEN OTHER THEN
+    ROLLBACK;
+    RAISE;
+END
+$$;

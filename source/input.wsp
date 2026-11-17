@@ -1,2 +1,8 @@
 ﻿##plain-list-of-relative-files
-bigdata.sql
+bigdata_clean.sql
+Medalliion/Bronze/01_bronze_ddl.sql
+Medalliion/Bronze/02_bronze_ingestion_transform.sql
+Medalliion/Silver/02_silver_cleansing_transform.sql
+Medalliion/Silver/01_silver_ddl.sql
+Medalliion/Gold/01_gold_ddl.sql
+Medalliion/Gold/02_gold_analytics_transform.sql

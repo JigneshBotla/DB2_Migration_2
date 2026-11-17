@@ -1,9 +1,13 @@
+assessment_name: snowflake-migration-Nov11
+assessment_options: none
 code_source: extract
-committed_setup_tasks: registerCode,convertCode
+committed_setup_tasks: registerCode,convertCode,configureSandboxProfile
 dashboard_port: 7882
 entry_mode: fresh
 git_enabled: true
 git_main_branch: main
+git_remote_name: origin
+git_remote_url: https://github.com/JigneshBotla/DB2_Migration_2.git
 has_etl_code: 'false'
 has_power_bi: 'false'
 has_tableau: 'false'
@@ -11,6 +15,8 @@ migration_extras: none
 project_dir_confirmed: 'true'
 run_mode: manual
 run_mode_confirmed: 'true'
+sandbox_profile: db2_sandbox
+snowflake_database: DB2_MIGRATION_2
 tailor_conversion_settings: 'false'
 tasks:
   applyRules:

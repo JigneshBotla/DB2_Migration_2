@@ -1,0 +1,15 @@
+# Database bindings for the db2_sandbox profile.
+#
+# Convert does not generate this file for DB2 (there is no arrange phase and no
+# Code Unit Registry for this dialect), so it was created during the
+# configureSandboxProfile setup step.
+#
+# Source databases could not be enumerated from the live source: DB2 ad-hoc
+# source queries return QRY0006 and only a connection test is available. The
+# single source database below comes from the db2_source connection definition
+# (host localhost, port 50000, database testdb), corroborated by the db2look
+# header in db2_ddl/bigdata.sql which records "Database Name: TESTDB".
+source:
+  TESTDB: "${TESTDB}"
+snow:
+  DB2_MIGRATION_2: "<%TESTDB%>"

@@ -1,0 +1,96 @@
+SessionID,FileName,Category,Grammar Element,File Type,Total Count,Not Converted Count (Self),Source Language,MigrationID
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,VALUES,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,OUTPUT PARAMETER,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,YEAR,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE SCHEMA,SQL,1,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,AS query_expr,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Control of Flow,BEGIN...END,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,FOREIGN KEY COLUMN,SQL,9,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE TABLE,SQL,11,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,INTO,SQL,7,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,IN,SQL,6,4,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,=,SQL,26,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,ON,SQL,9,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,*,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,LEFT OUTER JOIN,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,ALTER TABLE,SQL,36,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,ROUND,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Cursors,CLOSE,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,NOT NULL COLUMN,SQL,80,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,BIGINT,SQL,1,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Cursors,FETCH,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,WHERE,SQL,7,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,COUNT,SQL,5,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,VARCHAR,SQL,28,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,DECIMAL,SQL,25,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,SMALLINT,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,CONTINUE HANDLER,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Cursors,DECLARE CURSOR,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,IS NULL / IS NOT NULL,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,BETWEEN,SQL,2,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,DETERMINISTIC,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,INNER JOIN,SQL,5,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,FIELD ACCESS,SQL,113,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,CHAR,SQL,30,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,NULL,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,ASSIGNMENT EXPR,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,CLOB,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,GROUP BY,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,RIGHT,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,>=,SQL,3,3,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Set Operator,EXCEPT,SQL,16,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Cursors,OPEN,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,MAX,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,<,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,USER,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,-,SQL,10,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,+,SQL,9,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,ALTER TABLE table_constraint,SQL,26,11,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,FORMAL PARAMETER DECLARATION,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Control of Flow,IF,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE FUNCTION,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,DATE,SQL,9,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,SELECT,SQL,13,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,LANGUAGE,SQL,9,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE VIEW,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Common Clause,AUTHORIZATION,SQL,1,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DML,INSERT,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,DECLARE VARIABLE,SQL,16,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,DAYS INTERVAL,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,ALTER TABLE ADD ELEMENT,SQL,35,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,>,SQL,3,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DML,DELETE,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,TIMESTAMP,SQL,7,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,PRIMARY KEY COLUMN,SQL,11,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,AVG,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,SIGNAL,SQL,2,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Data Type,INTEGER,SQL,39,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,FROM,SQL,14,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DML,INTO,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,COALESCE,SQL,5,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,SET,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DML,UPDATE,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE PROCEDURE,SQL,6,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,SUM,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,DEFAULT COLUMN,SQL,22,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,RETURNS,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,ALTER TABLE ALTER COLUMN,SQL,1,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,EXIT HANDLER,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,RETURN,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,THEN,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,DEFAULT,SQL,22,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Query,ORDER BY,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,UNIQUE COLUMN,SQL,4,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,AND,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,<=,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL,CREATE SEQUENCE,SQL,2,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Operator,||,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,RTRIM,SQL,8,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Control of Flow,SEARCHED CASE EXPRESSION,SQL,3,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,DAYS,SQL,2,2,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,DIGITS,SQL,1,1,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement - Control of Flow,WHILE,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,DECLARE,SQL,16,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Functions & Expressions,MONTH,SQL,2,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,DDL Content,IN PARAMETER,SQL,21,0,DB2,+8mhARM3jnqjj/PQbquepw==
+ddac70f1-109f-4bda-ba97-145d95a0ae89,/Users/as-mac-1184/.snowflake/scai/projects/snowflake-migration-20261110133337/source/bigdata_clean.sql,Statement,GET DIAGNOSTICS,SQL,1,0,DB2,+8mhARM3jnqjj/PQbquepw==

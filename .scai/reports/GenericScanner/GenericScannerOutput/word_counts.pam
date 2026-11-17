@@ -1,145 +1,374 @@
 FileId,Keyword,Count
-/bigdata.sql,=,101
-/bigdata.sql,action,19
-/bigdata.sql,add,35
-/bigdata.sql,alter table,36
-/bigdata.sql,alter column,1
-/bigdata.sql,always,6
-/bigdata.sql,and,4
-/bigdata.sql,as,37
-/bigdata.sql,authorization,1
-/bigdata.sql,avg,1
-/bigdata.sql,begin,6
-/bigdata.sql,between,2
-/bigdata.sql,bigint,1
-/bigdata.sql,by,19
-/bigdata.sql,cache,7
-/bigdata.sql,cascade,2
-/bigdata.sql,case,3
-/bigdata.sql,category,2
-/bigdata.sql,char,30
-/bigdata.sql,check,11
-/bigdata.sql,clob,1
-/bigdata.sql,close,2
-/bigdata.sql,coalesce,5
-/bigdata.sql,commit,1
-/bigdata.sql,compact,1
-/bigdata.sql,condition,2
-/bigdata.sql,connect,2
-/bigdata.sql,constraint,35
-/bigdata.sql,contains,3
-/bigdata.sql,continue,2
-/bigdata.sql,count,5
-/bigdata.sql,create view,8
-/bigdata.sql,create table,11
-/bigdata.sql,create sequence,2
-/bigdata.sql,create schema,1
-/bigdata.sql,create procedure,6
-/bigdata.sql,create function,3
-/bigdata.sql,current,45
-/bigdata.sql,cursor,2
-/bigdata.sql,cycle,8
-/bigdata.sql,data,6
-/bigdata.sql,date,12
-/bigdata.sql,days,3
-/bigdata.sql,decimal,25
-/bigdata.sql,declare exit handler for,4
-/bigdata.sql,declare,22
-/bigdata.sql,default,28
-/bigdata.sql,delete,10
-/bigdata.sql,deterministic,3
-/bigdata.sql,diagnostics,1
-/bigdata.sql,digits,1
-/bigdata.sql,do,2
-/bigdata.sql,else,4
-/bigdata.sql,elseif,1
-/bigdata.sql,enable,20
-/bigdata.sql,end,13
-/bigdata.sql,enforced,35
-/bigdata.sql,external,3
-/bigdata.sql,fetch,4
-/bigdata.sql,for,6
-/bigdata.sql,foreign,9
-/bigdata.sql,found,4
-/bigdata.sql,from,14
-/bigdata.sql,generated,6
-/bigdata.sql,get,1
-/bigdata.sql,group by,6
-/bigdata.sql,handler,2
-/bigdata.sql,identity,6
-/bigdata.sql,if,4
-/bigdata.sql,in,38
-/bigdata.sql,increment,8
-/bigdata.sql,inner join,5
-/bigdata.sql,insert,6
-/bigdata.sql,integer,39
-/bigdata.sql,into,13
-/bigdata.sql,is not null,1
-/bigdata.sql,key,9
-/bigdata.sql,language,9
-/bigdata.sql,left outer join,4
-/bigdata.sql,logged,1
-/bigdata.sql,max,2
-/bigdata.sql,maxvalue,8
-/bigdata.sql,minvalue,8
-/bigdata.sql,modifies,6
-/bigdata.sql,month,2
-/bigdata.sql,no,33
-/bigdata.sql,not null,80
-/bigdata.sql,not,5
-/bigdata.sql,null,1
-/bigdata.sql,on,27
-/bigdata.sql,open,2
-/bigdata.sql,optimization,20
-/bigdata.sql,order by,1
-/bigdata.sql,order,8
-/bigdata.sql,organize,11
-/bigdata.sql,out,8
-/bigdata.sql,path,17
-/bigdata.sql,primary key,11
-/bigdata.sql,query,20
-/bigdata.sql,r,8
-/bigdata.sql,references,9
-/bigdata.sql,reset,1
-/bigdata.sql,restart,1
-/bigdata.sql,return,3
-/bigdata.sql,returns,3
-/bigdata.sql,right,1
-/bigdata.sql,round,2
-/bigdata.sql,row,11
-/bigdata.sql,rtrim,8
-/bigdata.sql,schema,17
-/bigdata.sql,select,13
-/bigdata.sql,set,76
-/bigdata.sql,signal,2
-/bigdata.sql,smallint,4
-/bigdata.sql,sql,18
-/bigdata.sql,sqlexception,1
-/bigdata.sql,sqlstate,3
-/bigdata.sql,start,8
-/bigdata.sql,state,8
-/bigdata.sql,sum,8
-/bigdata.sql,sysibm,20
-/bigdata.sql,terminate,1
-/bigdata.sql,then,7
-/bigdata.sql,timestamp,15
-/bigdata.sql,to,1
-/bigdata.sql,unique,4
-/bigdata.sql,update,11
-/bigdata.sql,user,1
-/bigdata.sql,values,6
-/bigdata.sql,varchar,28
-/bigdata.sql,when,4
-/bigdata.sql,where,7
-/bigdata.sql,while,4
-/bigdata.sql,with,31
-/bigdata.sql,work,1
-/bigdata.sql,year,2
-/bigdata.sql,||,8
-/bigdata.sql,*,4
-/bigdata.sql,+,33
-/bigdata.sql,-,10
-/bigdata.sql,<=,3
-/bigdata.sql,<,1
-/bigdata.sql,>=,3
-/bigdata.sql,>,3
+/bigdata_clean.sql,=,47
+/bigdata_clean.sql,action,19
+/bigdata_clean.sql,add,35
+/bigdata_clean.sql,alter table,36
+/bigdata_clean.sql,alter column,1
+/bigdata_clean.sql,always,6
+/bigdata_clean.sql,and,4
+/bigdata_clean.sql,as,37
+/bigdata_clean.sql,authorization,1
+/bigdata_clean.sql,avg,1
+/bigdata_clean.sql,begin,6
+/bigdata_clean.sql,between,2
+/bigdata_clean.sql,bigint,1
+/bigdata_clean.sql,by,19
+/bigdata_clean.sql,cache,7
+/bigdata_clean.sql,cascade,2
+/bigdata_clean.sql,case,3
+/bigdata_clean.sql,category,2
+/bigdata_clean.sql,char,30
+/bigdata_clean.sql,check,11
+/bigdata_clean.sql,clob,1
+/bigdata_clean.sql,close,2
+/bigdata_clean.sql,coalesce,5
+/bigdata_clean.sql,compact,1
+/bigdata_clean.sql,condition,2
+/bigdata_clean.sql,connect,1
+/bigdata_clean.sql,constraint,35
+/bigdata_clean.sql,contains,3
+/bigdata_clean.sql,continue,2
+/bigdata_clean.sql,count,5
+/bigdata_clean.sql,create view,8
+/bigdata_clean.sql,create table,11
+/bigdata_clean.sql,create sequence,2
+/bigdata_clean.sql,create schema,1
+/bigdata_clean.sql,create procedure,6
+/bigdata_clean.sql,create function,3
+/bigdata_clean.sql,current,11
+/bigdata_clean.sql,cursor,2
+/bigdata_clean.sql,cycle,8
+/bigdata_clean.sql,data,6
+/bigdata_clean.sql,date,12
+/bigdata_clean.sql,days,3
+/bigdata_clean.sql,decimal,25
+/bigdata_clean.sql,declare exit handler for,4
+/bigdata_clean.sql,declare,22
+/bigdata_clean.sql,default,28
+/bigdata_clean.sql,delete,10
+/bigdata_clean.sql,deterministic,3
+/bigdata_clean.sql,diagnostics,1
+/bigdata_clean.sql,digits,1
+/bigdata_clean.sql,do,2
+/bigdata_clean.sql,else,4
+/bigdata_clean.sql,elseif,1
+/bigdata_clean.sql,enable,20
+/bigdata_clean.sql,end,13
+/bigdata_clean.sql,enforced,35
+/bigdata_clean.sql,external,3
+/bigdata_clean.sql,fetch,4
+/bigdata_clean.sql,for,6
+/bigdata_clean.sql,foreign,9
+/bigdata_clean.sql,found,4
+/bigdata_clean.sql,from,14
+/bigdata_clean.sql,generated,6
+/bigdata_clean.sql,get,1
+/bigdata_clean.sql,group by,6
+/bigdata_clean.sql,handler,2
+/bigdata_clean.sql,identity,6
+/bigdata_clean.sql,if,4
+/bigdata_clean.sql,in,38
+/bigdata_clean.sql,increment,8
+/bigdata_clean.sql,inner join,5
+/bigdata_clean.sql,insert,6
+/bigdata_clean.sql,integer,39
+/bigdata_clean.sql,into,13
+/bigdata_clean.sql,is not null,1
+/bigdata_clean.sql,key,9
+/bigdata_clean.sql,language,9
+/bigdata_clean.sql,left outer join,4
+/bigdata_clean.sql,logged,1
+/bigdata_clean.sql,max,2
+/bigdata_clean.sql,maxvalue,8
+/bigdata_clean.sql,minvalue,8
+/bigdata_clean.sql,modifies,6
+/bigdata_clean.sql,month,2
+/bigdata_clean.sql,no,33
+/bigdata_clean.sql,not null,80
+/bigdata_clean.sql,not,5
+/bigdata_clean.sql,null,1
+/bigdata_clean.sql,on,27
+/bigdata_clean.sql,open,2
+/bigdata_clean.sql,optimization,20
+/bigdata_clean.sql,order by,1
+/bigdata_clean.sql,order,8
+/bigdata_clean.sql,organize,11
+/bigdata_clean.sql,out,8
+/bigdata_clean.sql,primary key,11
+/bigdata_clean.sql,query,20
+/bigdata_clean.sql,r,8
+/bigdata_clean.sql,references,9
+/bigdata_clean.sql,restart,1
+/bigdata_clean.sql,return,3
+/bigdata_clean.sql,returns,3
+/bigdata_clean.sql,right,1
+/bigdata_clean.sql,round,2
+/bigdata_clean.sql,row,11
+/bigdata_clean.sql,rtrim,8
+/bigdata_clean.sql,select,13
+/bigdata_clean.sql,set,22
+/bigdata_clean.sql,signal,2
+/bigdata_clean.sql,smallint,4
+/bigdata_clean.sql,sql,18
+/bigdata_clean.sql,sqlexception,1
+/bigdata_clean.sql,sqlstate,3
+/bigdata_clean.sql,start,8
+/bigdata_clean.sql,state,8
+/bigdata_clean.sql,sum,8
+/bigdata_clean.sql,then,7
+/bigdata_clean.sql,timestamp,15
+/bigdata_clean.sql,to,1
+/bigdata_clean.sql,unique,4
+/bigdata_clean.sql,update,11
+/bigdata_clean.sql,user,1
+/bigdata_clean.sql,values,6
+/bigdata_clean.sql,varchar,28
+/bigdata_clean.sql,when,4
+/bigdata_clean.sql,where,7
+/bigdata_clean.sql,while,4
+/bigdata_clean.sql,with,31
+/bigdata_clean.sql,year,2
+/bigdata_clean.sql,||,8
+/bigdata_clean.sql,*,4
+/bigdata_clean.sql,+,33
+/bigdata_clean.sql,-,10
+/bigdata_clean.sql,<=,3
+/bigdata_clean.sql,<,1
+/bigdata_clean.sql,>=,3
+/bigdata_clean.sql,>,3
+/Medalliion/Bronze/01_bronze_ddl.sql,always,4
+/Medalliion/Bronze/01_bronze_ddl.sql,as,4
+/Medalliion/Bronze/01_bronze_ddl.sql,bigint,4
+/Medalliion/Bronze/01_bronze_ddl.sql,by,4
+/Medalliion/Bronze/01_bronze_ddl.sql,char,5
+/Medalliion/Bronze/01_bronze_ddl.sql,check,4
+/Medalliion/Bronze/01_bronze_ddl.sql,constraint,8
+/Medalliion/Bronze/01_bronze_ddl.sql,create table,4
+/Medalliion/Bronze/01_bronze_ddl.sql,current,4
+/Medalliion/Bronze/01_bronze_ddl.sql,default,13
+/Medalliion/Bronze/01_bronze_ddl.sql,generated,4
+/Medalliion/Bronze/01_bronze_ddl.sql,identity,4
+/Medalliion/Bronze/01_bronze_ddl.sql,in,4
+/Medalliion/Bronze/01_bronze_ddl.sql,increment,4
+/Medalliion/Bronze/01_bronze_ddl.sql,not null,24
+/Medalliion/Bronze/01_bronze_ddl.sql,primary key,4
+/Medalliion/Bronze/01_bronze_ddl.sql,start,4
+/Medalliion/Bronze/01_bronze_ddl.sql,timestamp,12
+/Medalliion/Bronze/01_bronze_ddl.sql,varchar,47
+/Medalliion/Bronze/01_bronze_ddl.sql,with,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,=,3
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,as,57
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,case,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,char,22
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,current,20
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,date,11
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,day,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,decimal,7
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,digits,7
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,else,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,end,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,from,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,inner join,3
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,insert,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,into,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,is not null,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,ltrim,3
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,minutes,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,month,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,null,1
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,on,3
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,rtrim,17
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,select,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,state,1
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,substr,7
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,then,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,timestamp,9
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,upper,1
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,value,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,when,2
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,where,1
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,with,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,year,4
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,||,13
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,-,3
+/Medalliion/Bronze/02_bronze_ingestion_transform.sql,>=,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,=,30
+/Medalliion/Silver/02_silver_cleansing_transform.sql,and,9
+/Medalliion/Silver/02_silver_cleansing_transform.sql,as,65
+/Medalliion/Silver/02_silver_cleansing_transform.sql,case,9
+/Medalliion/Silver/02_silver_cleansing_transform.sql,category,6
+/Medalliion/Silver/02_silver_cleansing_transform.sql,count,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,current,6
+/Medalliion/Silver/02_silver_cleansing_transform.sql,date,7
+/Medalliion/Silver/02_silver_cleansing_transform.sql,days,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,decimal,4
+/Medalliion/Silver/02_silver_cleansing_transform.sql,desc,4
+/Medalliion/Silver/02_silver_cleansing_transform.sql,else,9
+/Medalliion/Silver/02_silver_cleansing_transform.sql,end,9
+/Medalliion/Silver/02_silver_cleansing_transform.sql,exists,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,from,11
+/Medalliion/Silver/02_silver_cleansing_transform.sql,group by,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,in,9
+/Medalliion/Silver/02_silver_cleansing_transform.sql,inner join,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,insert,5
+/Medalliion/Silver/02_silver_cleansing_transform.sql,integer,20
+/Medalliion/Silver/02_silver_cleansing_transform.sql,into,5
+/Medalliion/Silver/02_silver_cleansing_transform.sql,is not null,5
+/Medalliion/Silver/02_silver_cleansing_transform.sql,is null,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,left outer join,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,max,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,merge,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,microsecond,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,not,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,null,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,on,6
+/Medalliion/Silver/02_silver_cleansing_transform.sql,or,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,order by,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,over,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,partition by,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,row_number,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,rtrim,32
+/Medalliion/Silver/02_silver_cleansing_transform.sql,select,11
+/Medalliion/Silver/02_silver_cleansing_transform.sql,set,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,state,8
+/Medalliion/Silver/02_silver_cleansing_transform.sql,sum,1
+/Medalliion/Silver/02_silver_cleansing_transform.sql,then,25
+/Medalliion/Silver/02_silver_cleansing_transform.sql,timestamp,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,update,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,upper,10
+/Medalliion/Silver/02_silver_cleansing_transform.sql,using,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,value,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,values,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,when not matched,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,when matched,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,when,19
+/Medalliion/Silver/02_silver_cleansing_transform.sql,where,6
+/Medalliion/Silver/02_silver_cleansing_transform.sql,with,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,||,4
+/Medalliion/Silver/02_silver_cleansing_transform.sql,*,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,-,7
+/Medalliion/Silver/02_silver_cleansing_transform.sql,<>,6
+/Medalliion/Silver/02_silver_cleansing_transform.sql,<=,3
+/Medalliion/Silver/02_silver_cleansing_transform.sql,>=,2
+/Medalliion/Silver/02_silver_cleansing_transform.sql,>,3
+/Medalliion/Silver/01_silver_ddl.sql,always,4
+/Medalliion/Silver/01_silver_ddl.sql,as,4
+/Medalliion/Silver/01_silver_ddl.sql,bigint,4
+/Medalliion/Silver/01_silver_ddl.sql,by,4
+/Medalliion/Silver/01_silver_ddl.sql,category,1
+/Medalliion/Silver/01_silver_ddl.sql,char,10
+/Medalliion/Silver/01_silver_ddl.sql,check,3
+/Medalliion/Silver/01_silver_ddl.sql,constraint,9
+/Medalliion/Silver/01_silver_ddl.sql,create table,4
+/Medalliion/Silver/01_silver_ddl.sql,current,2
+/Medalliion/Silver/01_silver_ddl.sql,date,6
+/Medalliion/Silver/01_silver_ddl.sql,decimal,5
+/Medalliion/Silver/01_silver_ddl.sql,default,9
+/Medalliion/Silver/01_silver_ddl.sql,generated,4
+/Medalliion/Silver/01_silver_ddl.sql,identity,4
+/Medalliion/Silver/01_silver_ddl.sql,in,3
+/Medalliion/Silver/01_silver_ddl.sql,increment,4
+/Medalliion/Silver/01_silver_ddl.sql,integer,11
+/Medalliion/Silver/01_silver_ddl.sql,not null,57
+/Medalliion/Silver/01_silver_ddl.sql,primary key,4
+/Medalliion/Silver/01_silver_ddl.sql,smallint,1
+/Medalliion/Silver/01_silver_ddl.sql,start,4
+/Medalliion/Silver/01_silver_ddl.sql,state,1
+/Medalliion/Silver/01_silver_ddl.sql,timestamp,6
+/Medalliion/Silver/01_silver_ddl.sql,unique,2
+/Medalliion/Silver/01_silver_ddl.sql,varchar,20
+/Medalliion/Silver/01_silver_ddl.sql,with,4
+/Medalliion/Gold/01_gold_ddl.sql,always,3
+/Medalliion/Gold/01_gold_ddl.sql,and,3
+/Medalliion/Gold/01_gold_ddl.sql,as,3
+/Medalliion/Gold/01_gold_ddl.sql,between,3
+/Medalliion/Gold/01_gold_ddl.sql,bigint,5
+/Medalliion/Gold/01_gold_ddl.sql,by,3
+/Medalliion/Gold/01_gold_ddl.sql,category,1
+/Medalliion/Gold/01_gold_ddl.sql,char,2
+/Medalliion/Gold/01_gold_ddl.sql,check,3
+/Medalliion/Gold/01_gold_ddl.sql,constraint,10
+/Medalliion/Gold/01_gold_ddl.sql,create table,4
+/Medalliion/Gold/01_gold_ddl.sql,current,4
+/Medalliion/Gold/01_gold_ddl.sql,date,3
+/Medalliion/Gold/01_gold_ddl.sql,decimal,17
+/Medalliion/Gold/01_gold_ddl.sql,default,4
+/Medalliion/Gold/01_gold_ddl.sql,generated,3
+/Medalliion/Gold/01_gold_ddl.sql,identity,3
+/Medalliion/Gold/01_gold_ddl.sql,increment,3
+/Medalliion/Gold/01_gold_ddl.sql,integer,15
+/Medalliion/Gold/01_gold_ddl.sql,not null,59
+/Medalliion/Gold/01_gold_ddl.sql,primary key,4
+/Medalliion/Gold/01_gold_ddl.sql,smallint,5
+/Medalliion/Gold/01_gold_ddl.sql,start,3
+/Medalliion/Gold/01_gold_ddl.sql,timestamp,8
+/Medalliion/Gold/01_gold_ddl.sql,unique,3
+/Medalliion/Gold/01_gold_ddl.sql,varchar,10
+/Medalliion/Gold/01_gold_ddl.sql,with,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,=,18
+/Medalliion/Gold/02_gold_analytics_transform.sql,and,12
+/Medalliion/Gold/02_gold_analytics_transform.sql,as,87
+/Medalliion/Gold/02_gold_analytics_transform.sql,asc,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,avg,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,between,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,case,12
+/Medalliion/Gold/02_gold_analytics_transform.sql,category,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,char,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,coalesce,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,count,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,current,14
+/Medalliion/Gold/02_gold_analytics_transform.sql,date,9
+/Medalliion/Gold/02_gold_analytics_transform.sql,days,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,decimal,11
+/Medalliion/Gold/02_gold_analytics_transform.sql,dense_rank,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,desc,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,distinct,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,else,11
+/Medalliion/Gold/02_gold_analytics_transform.sql,end,12
+/Medalliion/Gold/02_gold_analytics_transform.sql,for,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,from,16
+/Medalliion/Gold/02_gold_analytics_transform.sql,group by,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,in,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,inner join,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,insert,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,integer,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,into,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,is not null,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,lag,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,left outer join,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,max,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,min,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,month,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,ntile,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,null,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,nullif,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,on,6
+/Medalliion/Gold/02_gold_analytics_transform.sql,optimize,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,order by,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,over,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,partition by,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,percent_rank,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,preceding,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,round,8
+/Medalliion/Gold/02_gold_analytics_transform.sql,row,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,rows,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,select,16
+/Medalliion/Gold/02_gold_analytics_transform.sql,smallint,3
+/Medalliion/Gold/02_gold_analytics_transform.sql,sum,13
+/Medalliion/Gold/02_gold_analytics_transform.sql,sysibm,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,then,18
+/Medalliion/Gold/02_gold_analytics_transform.sql,timestamp,4
+/Medalliion/Gold/02_gold_analytics_transform.sql,unbounded,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,value,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,when,18
+/Medalliion/Gold/02_gold_analytics_transform.sql,where,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,with,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,year,6
+/Medalliion/Gold/02_gold_analytics_transform.sql,||,2
+/Medalliion/Gold/02_gold_analytics_transform.sql,*,6
+/Medalliion/Gold/02_gold_analytics_transform.sql,+,1
+/Medalliion/Gold/02_gold_analytics_transform.sql,-,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,/,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,<=,7
+/Medalliion/Gold/02_gold_analytics_transform.sql,>=,10
+/Medalliion/Gold/02_gold_analytics_transform.sql,>,4
