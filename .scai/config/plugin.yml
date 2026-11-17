@@ -1,7 +1,7 @@
 assessment_name: snowflake-migration-Nov11
 assessment_options: none
 code_source: extract
-committed_setup_tasks: registerCode,convertCode,configureSandboxProfile
+committed_setup_tasks: registerCode,convertCode,configureSandboxProfile,configureTesting
 dashboard_port: 7882
 entry_mode: fresh
 git_enabled: true
@@ -157,7 +157,7 @@ tasks:
     enabled: true
     locked: true
   runAssessment:
-    enabled: true
+    enabled: false
   runTests:
     enabled: true
   seedScript:
@@ -186,3 +186,4 @@ tasks:
     enabled: true
   verify:
     enabled: true
+testing_data_source: hey wait..1.)i told you to just convert the legacy etl codes to snowflqake sql and just push to github.... 2.)also you havent asked me about which branch you should push the codes.. you just pushed directly to main!!?...make all these learnings in LEARNINGS.md file ..
