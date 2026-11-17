@@ -1,0 +1,120 @@
+-- ============================================================================
+-- GOLD LAYER DDL - SNOWFLAKE (converted from IBM DB2 LUW)
+-- ============================================================================
+-- Purpose: Aggregated business reporting marts, executive KPI scorecards,
+-- customer segmentation (RFM scoring), and inventory velocity analytics.
+--
+-- Converted by SnowConvert 2.51.1-Pr, then hand-repaired. Raw converter output is
+-- preserved under artifacts/Medalliion/Gold/01_gold_ddl/deterministic/.
+--
+-- Repairs applied to the converted output:
+--   1. Removed 3 marker lines reading
+--      '!!!RESOLVE EWI!!! SSC-EWI-0035 - CHECK STATEMENT NOT SUPPORTED'.
+--      The markers are not valid SQL, and the EWI is incorrect: Snowflake
+--      supports AND enforces CHECK constraints. The three RFM score CHECK
+--      constraints are retained deliberately.
+--   2. Qualified all table names as DB2_MIGRATION_2.BIGDATA so the script runs
+--      without a USE SCHEMA step.
+--
+-- Carried-over functional differences:
+--   - DB2 'GENERATED ALWAYS AS IDENTITY' became Snowflake 'IDENTITY'. Snowflake
+--     has no GENERATED ALWAYS equivalent, so explicit inserts into these keys
+--     are now possible where DB2 rejected them.
+--   - PRIMARY KEY and UNIQUE are metadata only in Snowflake and are NOT
+--     enforced. UQ_GOLD_PERF_GRAIN, UQ_GOLD_RFM_CUST and UQ_GOLD_VELOCITY_GRAIN
+--     will therefore not prevent duplicate mart rows. Re-running
+--     02_gold_analytics_transform.sql appends rather than replacing, so the
+--     marts must be truncated before a refresh or they will accumulate
+--     duplicate grain rows.
+-- ============================================================================
+
+-- Monthly Sales Performance Reporting Mart
+CREATE TABLE DB2_MIGRATION_2.BIGDATA.GOLD_FACT_SALES_PERFORMANCE_MONTHLY (
+    PERF_MART_ID         BIGINT NOT NULL IDENTITY(1, 1) ORDER,
+    CALENDAR_YEAR        SMALLINT NOT NULL,
+    CALENDAR_MONTH       SMALLINT NOT NULL,
+    REGION               VARCHAR(20) NOT NULL,
+    PAYMENT_METHOD       VARCHAR(20) NOT NULL,
+    TOTAL_ORDERS         INTEGER NOT NULL,
+    COMPLETED_ORDERS     INTEGER NOT NULL,
+    CANCELLED_ORDERS     INTEGER NOT NULL,
+    LATE_DELIVERIES      INTEGER NOT NULL,
+    ON_TIME_DELIVERY_PCT DECIMAL(5,2) NOT NULL,
+    TOTAL_UNITS_SOLD     INTEGER NOT NULL,
+    GROSS_SUBTOTAL       DECIMAL(13,2) NOT NULL,
+    TOTAL_TAX            DECIMAL(11,2) NOT NULL,
+    TOTAL_FREIGHT        DECIMAL(11,2) NOT NULL,
+    NET_REVENUE          DECIMAL(13,2) NOT NULL,
+    AVG_ORDER_VALUE      DECIMAL(11,2) NOT NULL,
+    AVG_FULFILLMENT_DAYS DECIMAL(5,2),
+    RUNNING_YTD_REVENUE  DECIMAL(15,2) NOT NULL,
+    MOM_GROWTH_PCT       DECIMAL(7,2),
+    MART_REFRESHED_TS    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    CONSTRAINT PK_GOLD_SALES_PERF PRIMARY KEY (PERF_MART_ID),
+    CONSTRAINT UQ_GOLD_PERF_GRAIN UNIQUE (CALENDAR_YEAR, CALENDAR_MONTH, REGION, PAYMENT_METHOD)
+)
+COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 2,  "minor": 51,  "patch": "1-Pr" }, "attributes": {  "component": "db2",  "convertedOn": "11/16/2026",  "domain": "no-domain-provided",  "migrationid": "lOShAdvmDnqnRwvBjfuipQ==" }}';
+
+-- Customer RFM (Recency, Frequency, Monetary) Segmentation Mart
+CREATE TABLE DB2_MIGRATION_2.BIGDATA.GOLD_DIM_CUSTOMER_RFM_METRICS (
+    RFM_ID               BIGINT NOT NULL IDENTITY(1, 1) ORDER,
+    CUSTOMER_KEY         BIGINT NOT NULL,
+    CUSTNO               CHAR(6) NOT NULL,
+    CUSTOMER_NAME        VARCHAR(80) NOT NULL,
+    REGION               VARCHAR(20) NOT NULL,
+    FIRST_ORDER_DATE     DATE NOT NULL,
+    LAST_ORDER_DATE      DATE NOT NULL,
+    DAYS_SINCE_LAST_ORD  INTEGER NOT NULL,
+    LIFETIME_ORDER_COUNT INTEGER NOT NULL,
+    LIFETIME_SPEND       DECIMAL(13,2) NOT NULL,
+    RECENCY_SCORE        SMALLINT NOT NULL,
+    FREQUENCY_SCORE      SMALLINT NOT NULL,
+    MONETARY_SCORE       SMALLINT NOT NULL,
+    RFM_COMPOSITE_SCORE  VARCHAR(10) NOT NULL,
+    CUSTOMER_SEGMENT     VARCHAR(30) NOT NULL,
+    SPEND_RANK           BIGINT NOT NULL,
+    SPEND_PERCENTILE     DECIMAL(5,4) NOT NULL,
+    MART_REFRESHED_TS    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    CONSTRAINT PK_GOLD_RFM PRIMARY KEY (RFM_ID),
+    CONSTRAINT UQ_GOLD_RFM_CUST UNIQUE (CUSTOMER_KEY),
+    CONSTRAINT CK_GOLD_RFM_REC CHECK (RECENCY_SCORE BETWEEN 1 AND 5),
+    CONSTRAINT CK_GOLD_RFM_FRQ CHECK (FREQUENCY_SCORE BETWEEN 1 AND 5),
+    CONSTRAINT CK_GOLD_RFM_MON CHECK (MONETARY_SCORE BETWEEN 1 AND 5)
+)
+COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 2,  "minor": 51,  "patch": "1-Pr" }, "attributes": {  "component": "db2",  "convertedOn": "11/16/2026",  "domain": "no-domain-provided",  "migrationid": "lOShAdvmDnqnRwvBjfuipQ==" }}';
+
+-- Inventory Velocity & Reorder Health Mart
+CREATE TABLE DB2_MIGRATION_2.BIGDATA.GOLD_INVENTORY_VELOCITY_MART (
+    VELOCITY_ID          BIGINT NOT NULL IDENTITY(1, 1) ORDER,
+    WAREHOUSE_ID         CHAR(4) NOT NULL,
+    SKU                  VARCHAR(20) NOT NULL,
+    PRODUCT_NAME         VARCHAR(100) NOT NULL,
+    CATEGORY             VARCHAR(30) NOT NULL,
+    CURRENT_ON_HAND      INTEGER NOT NULL,
+    CURRENT_AVAILABLE    INTEGER NOT NULL,
+    UNITS_SOLD_L30D      INTEGER NOT NULL,
+    DAILY_BURN_RATE      DECIMAL(7,2) NOT NULL,
+    DAYS_OF_SUPPLY_LEFT  INTEGER NOT NULL,
+    TURNOVER_RATIO       DECIMAL(7,2) NOT NULL,
+    STOCKOUT_RISK_TIER   VARCHAR(20) NOT NULL,
+    SUGGESTED_ORDER_QTY  INTEGER NOT NULL,
+    MART_REFRESHED_TS    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    CONSTRAINT PK_GOLD_VELOCITY PRIMARY KEY (VELOCITY_ID),
+    CONSTRAINT UQ_GOLD_VELOCITY_GRAIN UNIQUE (WAREHOUSE_ID, SKU)
+)
+COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 2,  "minor": 51,  "patch": "1-Pr" }, "attributes": {  "component": "db2",  "convertedOn": "11/16/2026",  "domain": "no-domain-provided",  "migrationid": "lOShAdvmDnqnRwvBjfuipQ==" }}';
+
+-- Executive C-Level KPI Snapshot Mart
+CREATE TABLE DB2_MIGRATION_2.BIGDATA.GOLD_EXECUTIVE_SUMMARY_KPI (
+    KPI_SNAPSHOT_DATE    DATE NOT NULL,
+    MTD_TOTAL_REVENUE    DECIMAL(15,2) NOT NULL,
+    YTD_TOTAL_REVENUE    DECIMAL(15,2) NOT NULL,
+    ACTIVE_CUSTOMER_CNT  INTEGER NOT NULL,
+    TOTAL_OPEN_ORDERS    INTEGER NOT NULL,
+    FULFILLMENT_SLA_PCT  DECIMAL(5,2) NOT NULL,
+    AVG_BASKET_SIZE      DECIMAL(7,2) NOT NULL,
+    CRITICAL_STOCK_SKUS  INTEGER NOT NULL,
+    CALCULATED_TS        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+    CONSTRAINT PK_GOLD_EXEC_KPI PRIMARY KEY (KPI_SNAPSHOT_DATE)
+)
+COMMENT = '{ "origin": "sf_sc", "name": "snowconvert", "version": {  "major": 2,  "minor": 51,  "patch": "1-Pr" }, "attributes": {  "component": "db2",  "convertedOn": "11/16/2026",  "domain": "no-domain-provided",  "migrationid": "lOShAdvmDnqnRwvBjfuipQ==" }}';
